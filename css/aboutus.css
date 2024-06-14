@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body1 {
+    background-color: #F1F1EA;
+
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #96B6C5;
+    padding: 5px;
+    width: 100%;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.fixedNav+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.fixedNav {
+    margin-bottom: 50px;
+}
+
+header .logo {
+    padding: 3% 10%;
+}
+
+header .icons {
+    display: flex;
+    gap: 40px;
+    padding-right: 50px;
+    margin-top: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-menu {
+    padding: 0;
+    text-align: center;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #003870;
+    padding: 10px 27%;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #F1F1EA;
+    background-color: #003870;
+}
+
+.nav3 {
+    text-decoration: none;
+}
+
+.nav2 {
+    text-decoration: none;
+    text-align: center;
+    font-size: 175%;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    border: none;
+    margin-top: 10px;
+}
+
+.nav1 {
+    display: flex;
+    word-spacing: 40px;
+}
+
+.nav3:link {
+    color: #003870;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav3:hover {
+    color: #003870;
+    border: none;
+}
+
+.nav3:visited {
+    color: #003870;
+}
+
+.navSearch {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.navSearch input,
+.navSearch .search1 {
+    border: none;
+    outline: none;
+    height: 30px;
+    background-color: #F1F1EA;
+}
+
+.navSearch input {
+    padding-left: 12px;
+    width: 80%;
+    border-radius: 100px 0 0 100px;
+}
+
+.navSearch .search1 {
+    width: 15%;
+    border-radius: 0 100px 100px 0;
+    cursor: pointer;
+    padding-right: 5px;
+    padding-top: 2px;
+}
+
+.navSearch .search1:hover {
+    width: 15.5%;
+    transition: all 0.3s;
+}
+
+footer {
+    background-color: #96B6C5;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #003366;
+}
+
+footer p {
+    color: #003366;
+    font-size: 14px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.list {
+    text-align: center;
+}
+
+/* 內容 */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.about-us {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.group-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #003870;
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: auto 200px;
+    margin-bottom: 20px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-front {
+    background-color: #fff;
+}
+
+.flip-card-back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+}
+
+.photo {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003870;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link .link {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.social-link .link.fb {
+    background-image: url('image/fb.png');
+}
+
+.social-link .link.ig {
+    background-image: url('image/ig.png');
+}
+
+.social-link .link.line {
+    background-image: url('image/line.png');
+}
+
+img {
+    object-fit: cover;
+}
+
+.feedback {
+    padding: 40px;
+}
+
+/* 彈出視窗 */
+.modal-header {
+    background-color: #96B6C5;
+}
+
+.modal-body {
+    background-color: #F1F1EA;
+
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .nav2 {
+        font-size: 120%;
+    }
+
+    .product-grid {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 80%;
+    }
+
+    .contact-us-display {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comments {
+        padding: 20px;
+    }
+
+    textarea {
+        min-width: 300px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    header .logo {
+        padding: 3% 0;
+    }
+
+    header .icons {
+        flex-direction: column;
+        gap: 20px;
+        padding-right: 0;
+    }
+
+    .nav2 {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 100%;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product {
+        width: 100%;
+        height: auto;
+    }
+
+    .navSearch {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 20px;
+    }
+
+    .navSearch input {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .navSearch .search1 {
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    header .logo img {
+        max-width: 70px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav2 {
+        font-size: 90%;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    textarea {
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    .button3 {
+        width: 150px;
+    }
+}

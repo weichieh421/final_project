@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Flora</title>
+    <link rel="stylesheet" href="css/itemspg.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="body1">
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="logo" style="border-radius: 50%; width: 100px">
+        </div>
+       
+        <div class="nav1">
+            <div class="nav2">
+                <a class="nav3" href="index.html">主頁</a>
+                <div class="dropdown">
+                    <a class="nav3 dropdown-toggle" href="itemspg.html" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        商品
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="itemspg.html">所有商品</a></li>
+                        <li><a class="dropdown-item" href="malepg.html">男性香調</a></li>
+                        <li><a class="dropdown-item" href="femalepg.html">女性香調</a></li>
+                        <li><a class="dropdown-item" href="neuterpg.html">中性香調</a></li>
+                        <li><a class="dropdown-item" href="otherpg.html">其他商品</a></li>
+                    </ul>
+                </div>
+                <a class="nav3" href="member.html" title="修改會員資料">會員中心</a>
+                <a class="nav3" href="aboutus.html">關於我們</a>
+            </div>
+        </div>
+        <div class="icons">
+            <div class="navSearch">
+                <input type="search" placeholder="">
+                <img class="search1" src="icon/search.png" onclick="handleSearch()"><i class="fas fa-search"></i>
+            </div>
+            <div class="dropdown">
+                <a class="nav3 dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="icon/user.png" class="icon"> <!-- User Icon -->
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">帳號登入</a></li>
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#signUpModal">帳號註冊</a></li>
+                </ul>
+            </div>
+            <a href="cart.html">
+                <img src="icon/cart.png" class="icon">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="product-gallery">
+            <div class="product_all">
+                <img src="image/aquatic.jpg">
+                <div class="overlay" onclick="location.href='aquatic.html'">
+                    <p>水生調香氛</p>
+                </div>
+                <div class="description" onclick="location.href='cart.html'">加入購物車</div>
+            </div>
+            <div class="product_all">
+                <img src="image/wood.jpg" >
+                <div class="overlay" onclick="location.href='wood.html'">
+                    <p>木質調香氛</p>
+                </div>
+                <div class="description"  onclick="location.href='cart.html'">加入購物車</div>
+            </div>
+            <div class="product_all">
+                <img src="image/leather.jpg">
+                <div class="overlay"  onclick="location.href='leather.html'">
+                    <p>皮革調香氛</p>
+                </div>
+                <div class="description" onclick="location.href='cart.html'">加入購物車</div>
+            </div>
+            <div class="product_all">
+                <img src="image/sea.jpg">
+                <div class="overlay" onclick="location.href='floral.html'">
+                    <p>海洋調香氛</p>
+                </div>
+                <div class="description" onclick="location.href='cart.html'">加入購物車</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2024 Miss Flora All Rights Reserved</p>
+    </footer>
+    <!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe src="log_in.html" width="100%" height="500px" style="border:none;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe src="sign_up.html" width="100%" height="500px" style="border:none;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

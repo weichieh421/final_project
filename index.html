@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Flora</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body class="body1">
+  <header>
+    <div class="logo">
+        <img src="image/logo.png" alt="logo" style="border-radius: 50%; width: 100px">
+    </div>
+   
+    <div class="nav1">
+        <div class="nav2">
+            <a class="nav3" href="index.html">主頁</a>
+            <div class="dropdown">
+                <a class="nav3 dropdown-toggle" href="itemspg.html" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    商品
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="itemspg.html">所有商品</a></li>
+                    <li><a class="dropdown-item" href="malepg.html">男性香調</a></li>
+                    <li><a class="dropdown-item" href="femalepg.html">女性香調</a></li>
+                    <li><a class="dropdown-item" href="neuterpg.html">中性香調</a></li>
+                    <li><a class="dropdown-item" href="otherpg.html">其他商品</a></li>
+                </ul>
+            </div>
+            <a class="nav3" href="member.html" title="修改會員資料">會員中心</a>
+            <a class="nav3" href="aboutus.html">關於我們</a>
+        </div>
+    </div>
+    <div class="icons">
+        <div class="navSearch">
+            <input type="search" placeholder="">
+            <img class="search1" src="icon/search.png" onclick="handleSearch()"><i class="fas fa-search"></i>
+        </div>
+        <div class="dropdown">
+            <a class="nav3 dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="icon/user.png" class="icon"> <!-- User Icon -->
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="userDropdown">
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">帳號登入</a></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#signUpModal">帳號註冊</a></li>
+            </ul>
+        </div>
+        <a href="cart.html">
+            <img src="icon/cart.png" class="icon">
+        </a>
+    </div>
+</header>
+
+
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/slide1.png" class="d-block w-100" width="500px" height="700px" onclick="location.href='itemspg.html'">
+              </div>
+              <div class="carousel-item">
+                <img src="image/slide2.png" class="d-block w-100" width="500px" height="700px" onclick="location.href='oil.html'">
+              </div>
+              <div class="carousel-item">
+                <img src="image/slide3.png" class="d-block w-100" width="500px" height="700px" onclick="location.href='frag.html'">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <section class="hot-products">
+            <br>
+            <h2 class="h2">本月熱銷</h2>
+            <div class="product-grid">
+              <div class="product">
+                <img src="image/leather.jpg" height="500"  onclick="location.href='leather.html'">
+                <div class="overlay"></div>
+                <p>古堡遺韻-Castle</p>
+                <button class="addtocart" onclick="location.href='leather.html'">加入購物車</button>
+              </div>
+              <div class="product">
+                <img src="image/aquatic.jpg" height="500" onclick="location.href='aquatic.html'">
+                <div class="overlay"></div>
+                <p>海洋之詩-Ocean</p>
+                <button class="addtocart" onclick="location.href='aquatic.html'">加入購物車</button>
+              </div>
+              <div class="product">
+                <img src="image/floral.jpg" height="500" onclick="location.href='floral.html'">
+                <div class="overlay"></div>
+                <p>牡丹盛宴-Peony</p>
+                <button class="addtocart" onclick="location.href='floral.html'">加入購物車</button>
+              </div>
+            </div>
+        </section>
+        <section class="contact-us">
+          <br>
+          <h2 class="h2">關於Miss Flora</h2><br>
+          <div class="contact-us-display">  
+            <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14469.026424275036!2d121.2407764!3d24.9573827!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1718096715946!5m2!1szh-TW!2stw" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+            </div>
+            <div class="comments">
+                <p class="com-tit">聯絡我們</p>
+                <hr width="400px"><br>
+                <textarea></textarea><br>
+                <button class="button3">Send</button>
+            </div>
+          </div>
+        </section>
+      
+       
+        
+    </main>
+
+    <footer>
+        <p>Copyright © 2024 Miss Flora All Rights Reserved</p>
+    </footer>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="log_in.html" width="100%" height="500px" style="border:none;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="sign_up.html" width="100%" height="500px" style="border:none;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+
+<script>
+  function handleSearch() {
+    // 搜索功能的相關處理
+  }
+</script>
+
+</body>
+</html>

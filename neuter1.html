@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Flora</title>
+    <link rel="stylesheet" href="css/iteminfo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="js/iteminfo.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+</head>
+<body class="body1">
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="logo" style="border-radius: 50%; width: 100px">
+        </div>
+       
+        <div class="nav1">
+            <div class="nav2">
+                <a class="nav3" href="index.html">主頁</a>
+                <div class="dropdown">
+                    <a class="nav3 dropdown-toggle" href="itemspg.html" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        商品
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="itemspg.html">所有商品</a></li>
+                        <li><a class="dropdown-item" href="malepg.html">男性香調</a></li>
+                        <li><a class="dropdown-item" href="femalepg.html">女性香調</a></li>
+                        <li><a class="dropdown-item" href="neuterpg.html">中性香調</a></li>
+                        <li><a class="dropdown-item" href="otherpg.html">其他商品</a></li>
+                    </ul>
+                </div>
+                <a class="nav3" href="member.html" title="修改會員資料">會員中心</a>
+                <a class="nav3" href="aboutus.html">關於我們</a>
+            </div>
+        </div>
+        <div class="icons">
+            <div class="navSearch">
+                <input type="search" placeholder="">
+                <img class="search1" src="icon/search.png" onclick="handleSearch()"><i class="fas fa-search"></i>
+            </div>
+            <div class="dropdown">
+                <a class="nav3 dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="icon/user.png" class="icon"> <!-- User Icon -->
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">帳號登入</a></li>
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#signUpModal">帳號註冊</a></li>
+                </ul>
+            </div>
+            <a href="cart.html">
+                <img src="icon/cart.png" class="icon">
+            </a>
+        </div>
+    </header>
+<div class="container1">
+    <div class="item">
+        <div class="photos">
+            <img id="change" src="image/neuter1.jpg"  alt="Image" height="400" width="400">
+            
+        </div>
+        <div class="my-details">
+            <h1 class="my-h1">中性香調香氛蠟燭</h1>
+            <hr color="#003870" width="430px"></hr>
+            <p class="price">NT$ 890</p>
+            <div class="options">
+                <label><input type="radio" name="item" value="image/neuter1.jpg" class="btn1" checked><span class="choice button2 ">寧靜之光-Tranquil Light</span></label>
+                <label><input type="radio" name="item" value="image/neuter2.jpg" class="btn2"><span class="choice button2 ">森林薄霧-Forest Mist</span></label><br>
+                <label><input type="radio" name="item" value="image/neuter3.jpg" class="btn3"><span class="choice button2 ">砂岩之影-Sandstone Shade</span></label>
+            </div>
+            <div class="quantity"> 
+                <input type="button" value="‒" class="q-btn" onclick="minus(0)">
+                <input type="text" value="1" class="totalnum">
+                <input type="button" value="+" class="q-btn" onclick="add(0)">
+            </div>
+            <button class="button3">加入購物車</button>
+            <button class="button3"onclick="location.href='order.html'">立即結帳</button>
+        </div>
+    </div>
+
+    <div class="my-description">
+        <h1 class="my-h1">Description</h1>
+        <hr color="#003870" width="100%">
+        <div class="my-description2">
+            <h3 class="my-h3">成分&規格（Ingredient）</h3>
+            <ul class="ingredient">
+                <li>挑選100%天然香料</li>
+                <li>使用法國天然大豆蠟</li>
+                <li>容量：400g</li>
+            </ul>
+            <h3 class="my-h3">前調（Top Notes）</h3>
+            清新的柑橘與淡雅的綠葉香調，帶來一縷清爽的氣息，瞬間點亮您的感官。<br>
+            <h3 class="my-h3">中調（Heart Notes）</h3>
+            隨著時間的推移，前調逐漸淡去，溫暖的木質香氣與柔和的花香交織，營造出一種平衡而和諧的氛圍。<br>
+            <h3 class="my-h3">後調（Base Notes）</h3>
+            當蠟燭燃燒到尾聲，沉穩的琥珀與麝香味道徐徐展開，帶來一種深沉而持久的尾韻，讓您感受到持久的舒適與安寧。<br><br>
+            點燃這款清雅中性香調香氛蠟燭，讓香氣在空間中緩緩蔓延，為您的生活增添一抹獨特的雅致與寧靜。無論是自我放鬆還是營造溫馨氛圍，這款香氛蠟燭都是您的理想選擇。<br>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="comments">
+            <h1 class="my-h1">Comment</h1>
+            <hr color="#003870" width="400px"><br>
+            <p class="write">Write Down Your Comment!</p><br>
+            <div class="star" id="star-rating1">
+                <iconify-icon 
+                icon="material-symbols:star-outline"
+                width="40"
+                data-index="1"
+                class="star-icon"></iconify-icon>
+                <iconify-icon 
+                icon="material-symbols:star-outline"
+                width="40"
+                data-index="2"
+                class="star-icon"></iconify-icon>
+                <iconify-icon 
+                icon="material-symbols:star-outline"
+                width="40"
+                data-index="3"
+                class="star-icon"></iconify-icon>
+                <iconify-icon 
+                icon="material-symbols:star-outline"
+                width="40"
+                data-index="4"
+                class="star-icon"></iconify-icon>
+                <iconify-icon 
+                icon="material-symbols:star-outline"
+                width="40"
+                data-index="5"
+                class="star-icon"></iconify-icon>
+            </div>
+            <textarea></textarea><br>
+            <button class="button3">Send</button>
+        </div>
+        <div class="reviews">
+            <h1 class="my-h1">Reviews</h1>
+            <hr color="#003870" width="400px"><br>
+            <div class="review">
+                <div class="review-flex">
+                    <img src="icon/comment_user.png" style="width: 50px;">
+                    <p>aa*****79</p>
+                    <p>★★★★★</p>
+                </div>
+                <p>香調非常平衡，每個層次的香氣都令人驚喜!</p>
+            </div>
+            <div class="review">
+                <div class="review-flex">
+                    <img src="icon/comment_user.png" style="width: 50px;">
+                    <p>li*****60</p>
+                    <p>★★★★☆</p>
+                </div>
+                <p>點燃後家裡充滿了優雅的氣息，設計也很簡約，特別喜歡</p>
+            </div>
+            <div class="review">
+                <div class="review-flex">
+                    <img src="icon/comment_user.png" style="width: 50px;">
+                    <p>na*****21</p>
+                    <p>★★★★★</p>
+                </div>
+                <p>Good quailty and fragrance!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright © 2024 Miss Flora All Rights Reserved</p>
+</footer>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe src="log_in.html" width="100%" height="500px" style="border:none;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe src="sign_up.html" width="100%" height="500px" style="border:none;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

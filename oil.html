@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Flora</title>
+    <link rel="stylesheet" href="css/iteminfo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="js/iteminfo.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+</head>
+<body class="body1">
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="logo" style="border-radius: 50%; width: 100px">
+        </div>
+       
+        <div class="nav1">
+            <div class="nav2">
+                <a class="nav3" href="index.html">主頁</a>
+                <div class="dropdown">
+                    <a class="nav3 dropdown-toggle" href="itemspg.html" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        商品
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="itemspg.html">所有商品</a></li>
+                        <li><a class="dropdown-item" href="malepg.html">男性香調</a></li>
+                        <li><a class="dropdown-item" href="femalepg.html">女性香調</a></li>
+                        <li><a class="dropdown-item" href="neuterpg.html">中性香調</a></li>
+                        <li><a class="dropdown-item" href="otherpg.html">其他商品</a></li>
+                    </ul>
+                </div>
+                <a class="nav3" href="member.html" title="修改會員資料">會員中心</a>
+                <a class="nav3" href="aboutus.html">關於我們</a>
+            </div>
+        </div>
+        <div class="icons">
+            <div class="navSearch">
+                <input type="search" placeholder="">
+                <img class="search1" src="icon/search.png" onclick="handleSearch()"><i class="fas fa-search"></i>
+            </div>
+            <div class="dropdown">
+                <a class="nav3 dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="icon/user.png" class="icon"> <!-- User Icon -->
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">帳號登入</a></li>
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#signUpModal">帳號註冊</a></li>
+                </ul>
+            </div>
+            <a href="cart.html">
+                <img src="icon/cart.png" class="icon">
+            </a>
+        </div>
+    </header>
+
+
+<div class="container1">
+    <div class="item">
+        <div class="photos">
+            <img id="change" src="image/oil.jpg"  alt="Image" height="400" width="400">
+            
+        </div>
+        <div class="my-details">
+            <h1 class="my-h1">草本精油</h1>
+            <hr color="#003870" width="430px"></hr>
+            <p class="price">NT$ 1690</p>
+            <div class="options">
+                <label><input type="radio" name="item" value="image/oil.jpg" class="btn1" checked><span class="choice button2 ">組合款NT$ 3200</span></label>
+                <label><input type="radio" name="item" value="image/oil2.jpg" class="btn3"><span class="choice button2 ">GLOW</span></label>
+                <label><input type="radio" name="item" value="image/oil3.jpg" class="btn4"><span class="choice button2 ">RESTORE</span></label>
+            </div>
+            <div class="quantity"> 
+                <input type="button" value="‒" class="q-btn" onclick="minus(0)">
+                <input type="text" value="1" class="totalnum">
+                <input type="button" value="+" class="q-btn" onclick="add(0)">
+            </div>
+            <button class="button3">加入購物車</button>
+            <button class="button3"onclick="location.href='#'">立即結帳</button>
+        </div>
+    </div>
+
+    <div class="my-description">
+        <h1 class="my-h1">Description</h1>
+        <hr color="#003870" width="100%">
+        <div class="my-description2">
+            <h3 class="my-h3">GLOW Type</h3>
+            GLOW 是一款為肌膚帶來光澤和活力的精油配方。它融合了多種天然植物精油，具有清新、柔和的香氣，同時擁有滋潤和保濕的功效。這款精油常常被用於皮膚護理產品中，可以幫助促進肌膚的再生和修護，使肌膚看起來更加明亮、光滑和有光澤。它也可以用於按摩或擴香，為身心帶來放鬆和愉悅的感受。<br><br>
+            <h3 class="my-h3">RESTORE Type</h3>
+            RESTORE 是一款專為放鬆和恢復身心平衡而設計的精油配方。它結合了多種具有舒緩和安定效果的植物精油，帶來溫暖、木質的香氣，能夠幫助舒緩壓力、緩解焦慮和提升睡眠質量。這款精油常被用於沐浴、按摩或擴香，能夠幫助身心放鬆，促進身心的平衡和恢復。<br><br>
+            這兩款精油都是天然的植物提取物，應該適用於大多數人群，但請注意可能存在的過敏反應，建議在使用前進行皮膚測試。无论是想要帶來光澤的護膚還是希望放鬆身心，都可以根據自己的需要選擇合適的精油。
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="comments">
+            <h1 class="my-h1">Comment</h1>
+            <hr color="#003870" width="400px"><br>
+            <p class="write">Write Down Your Comment!</p><br>
+            <div class="star" id="star-rating1">
+                <iconify-icon 
+                icon="material-symbols:star-outline"
+                width="40"
+                data-index="1"
+                class="star-icon"></iconify-icon>
+                <iconify-icon 
+                icon="material-symbols:star-outline"
+                width="40"
+                data-index="2"
+                class="star-icon"></iconify-icon>
+                <iconify-icon 
+                icon="material-symbols:star-outline"
+                width="40"
+                data-index="3"
+                class="star-icon"></iconify-icon>
+                <iconify-icon 
+                icon="material-symbols:star-outline"
+                width="40"
+                data-index="4"
+                class="star-icon"></iconify-icon>
+                <iconify-icon 
+                icon="material-symbols:star-outline"
+                width="40"
+                data-index="5"
+                class="star-icon"></iconify-icon>
+            </div>
+            <textarea></textarea><br>
+            <button class="button3">Send</button>
+        </div>
+        <div class="reviews">
+            <h1 class="my-h1">Reviews</h1>
+            <hr color="#003870" width="400px"><br>
+            <div class="review">
+                <div class="review-flex">
+                    <img src="icon/comment_user.png" style="width: 50px;">
+                    <p>aa*****79</p>
+                    <p>★★★★★</p>
+                </div>
+                <p>很棒的商品品質!!</p>
+            </div>
+            <div class="review">
+                <div class="review-flex">
+                    <img src="icon/comment_user.png" style="width: 50px;">
+                    <p>li*****60</p>
+                    <p>★★★★☆</p>
+                </div>
+                <p>等待是值得的🥰</p>
+            </div>
+            <div class="review">
+                <div class="review-flex">
+                    <img src="icon/comment_user.png" style="width: 50px;">
+                    <p>na*****21</p>
+                    <p>★★★★★</p>
+                </div>
+                <p>Good quailty and fragrance!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright © 2024 Miss Flora All Rights Reserved</p>
+</footer>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe src="log_in.html" width="100%" height="500px" style="border:none;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe src="sign_up.html" width="100%" height="500px" style="border:none;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
