@@ -153,6 +153,7 @@ footer {
 footer p {
     color: #003366;
     font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 img {
@@ -292,7 +293,7 @@ img {
     font-size: 120%;
 }
 
-/* 彈出視窗 */
+/* 彈出視窗功能 */
 .modal-header {
     background-color: #96B6C5;
 }
