@@ -270,22 +270,45 @@ img {
 }
 
 /* 彈出視窗 */
-.modal-header {
-    background-color: #96B6C5;
+.modal-header{
+    background-color: #96b6c5cc !important;
 }
-
-.modal-body {
-    background-color: #F1F1EA;
-}
-
+.modal-content {
+    background: transparent;
+    border: none;
+  }
+  
+  .modal-header, .modal-body {
+    background: transparent;
+    border: none;
+    padding: 0; /* Remove padding */
+  }
+  
+  .login-iframe {
+    display: block;
+    width: 100%;
+    height: 40vh; /* Height for log_in.html */
+    border: none;
+  }
+  
+  .signup-iframe {
+    display: block;
+    width: 100%;
+    height: 70vh; /* Height for sign_up.html */
+    border: none;
+  }
+  .btn-close{
+      background-color: #fff !important;
+  }
 .contact-us-display {
     display: flex;
     justify-content: space-around;
+    padding: 50px;
     margin: 50px;
 }
 
 .comments {
-    padding-right: 200px;
+    padding: auto 80px;
     float: left;
     text-align: center;
 }
@@ -311,6 +334,38 @@ textarea {
 .com-tit {
     font-size: 20px;
     color: #003870;
+}
+
+main img {
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.emailinput{
+    width: 350px;
+    border: none;
+    font-size: 18px;
+}
+
+/* 返回頂部按鈕 */
+#topBtn {
+    display: none; /* 默認隱藏 */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent; /* 背景透明 */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#topBtn:hover {
+    background-color: rgba(0, 56, 112, 0.1); /* 半透明背景 */
 }
 
 /* Responsive styles */

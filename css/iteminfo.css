@@ -168,13 +168,15 @@ img {
 }
 
 .item {
-    margin: 0 auto;
-    display: flex;
-    padding: 3% 80px;
+    /* margin: auto; */
+    display: inline-flex;
+    justify-content: center;
+    margin: 3% 10%;
     align-items: top;
 }
 
 .my-details {
+    /* background-color: black; */
     float: right;
     padding: 0px 100px;
 }
@@ -194,7 +196,6 @@ img {
     font-size: 25px;
     font-weight: bold;
     margin: 3% 5px;
-
 }
 
 .options,
@@ -279,9 +280,8 @@ input:checked+.button2 {
 
 .flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 50px 10px;
-    gap: 30px;
 }
 
 .comments {
@@ -311,10 +311,11 @@ textarea {
     /* background-color: palevioletred; */
     padding: 0px 20px;
     line-height: 35px;
-    /* padding: 8px 20px; */
 }
 
-
+.reviews{
+    margin-left: 1%;
+}
 
 .review-flex {
     display: flex;
@@ -368,7 +369,11 @@ textarea {
     align-items: center;
     color: #96B6C5;
 }
-
+.container1 img {
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 2s;
+}
 /* Responsive styles */
 @media (max-width: 1200px) {
     .nav2 {

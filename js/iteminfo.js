@@ -66,3 +66,11 @@ function minus(n){
         });
     });   
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll("img");
+    images.forEach(img => {
+        img.style.opacity = 1;
+    });
+});

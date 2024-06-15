@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .body1 {
     background-color: #F1F1EA;
+    height: 100%;
 }
 
 header {
@@ -144,10 +146,11 @@ footer {
     padding: 20px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    position: relative;
-    bottom: 0;
+    bottom: -53%;
     width: 100%;
     color: #003366;
+    height: 50px; 
+    position: absolute;
 }
 
 footer p {
@@ -165,6 +168,8 @@ img {
 main {
     padding: 20px;
     text-align: center;
+    height: 100vh;
+   
 }
 
 
@@ -270,8 +275,6 @@ main {
 
 .checkout {
     padding: 20px;
-    /* background-color: #ffffff; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
     text-align: right;
     margin-right: 10%;
@@ -306,14 +309,36 @@ main {
 }
 
 /* 彈出視窗 */
-.modal-header {
-    background-color: #96B6C5;
+.modal-header{
+    background-color: #96b6c5cc !important;
 }
-
-.modal-body {
-    background-color: #F1F1EA;
-
-}
+.modal-content {
+    background: transparent;
+    border: none;
+  }
+  
+  .modal-header, .modal-body {
+    background: transparent;
+    border: none;
+    padding: 0; /* Remove padding */
+  }
+  
+  .login-iframe {
+    display: block;
+    width: 100%;
+    height: 40vh; /* Height for log_in.html */
+    border: none;
+  }
+  
+  .signup-iframe {
+    display: block;
+    width: 100%;
+    height: 70vh; /* Height for sign_up.html */
+    border: none;
+  }
+  .btn-close{
+      background-color: #fff !important;
+  }
 
 /* Responsive styles */
 @media (max-width: 1200px) {
