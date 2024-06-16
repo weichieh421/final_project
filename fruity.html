@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miss Flora</title>
-    <link rel="stylesheet" href="css/iteminfo.css">
+    <link rel="stylesheet" href="assets/css/iteminfo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="js/iteminfo.js"></script>
+    <script src="assets/js/iteminfo.js"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
 </head>
 <body class="body1">
     <header>
         <div class="logo">
-            <img src="image/logo.png" alt="logo" style="border-radius: 50%; width: 100px">
+            <img src="assets/images/items/logo.png" alt="logo" style="border-radius: 50%; width: 100px">
         </div>
        
         <div class="nav1">
@@ -38,12 +38,12 @@
         </div>
         <div class="icons">
             <div class="navSearch">
-                <input type="search" placeholder="">
-                <img class="search1" src="icon/search.png" onclick="handleSearch()"><i class="fas fa-search"></i>
+                <input type="search">
+                <img class="search1" src="assets/images/icon/search.png" onclick="handleSearch()"><i class="fas fa-search"></i>
             </div>
             <div class="dropdown">
                 <a class="nav3 dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="icon/user.png" class="icon"> <!-- User Icon -->
+                    <img src="assets/images/icon/user.png" class="icon">
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="userDropdown">
                   <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">帳號登入</a></li>
@@ -51,7 +51,7 @@
                 </ul>
             </div>
             <a href="cart.html">
-                <img src="icon/cart.png" class="icon">
+                <img src="assets/images/icon/cart.png" class="icon">
             </a>
         </div>
     </header>
@@ -59,7 +59,7 @@
 <div class="container1">
     <div class="item">
         <div class="photos">
-            <img id="change" src="image/fruity.jpg"  alt="Image" height="400" width="400">
+            <img id="change" src="assets/images/items/fruity.jpg"  alt="Image" height="400" width="400">
             
         </div>
         <div class="my-details">
@@ -67,11 +67,11 @@
             <hr color="#003870" width="430px"></hr>
             <p class="price">NT$ 890</p>
             <div class="options">
-                <label><input type="radio" name="item" value="image/fruity.jpg" class="btn1" checked><span class="choice button2 ">熱帶綺夢-Tropical Fantasy</span></label>
-                <label><input type="radio" name="item" value="image/fruity1.jpg" class="btn2"><span class="choice button2 ">香甜果園-Sweet Orchard</span></label><br>
-                <label><input type="radio" name="item" value="image/fruity2.jpg" class="btn3"><span class="choice button2 ">果漾青春-Fruity Youth</span></label>
-                <label><input type="radio" name="item" value="image/fruity3.jpg" class="btn4"><span class="choice button2 ">鮮果盛宴-Fresh Fruit Feast</span></label>
-                <label><input type="radio" name="item" value="image/fruity4.jpg" class="btn5"><span class="choice button2 ">奇異果樂園-Kiwi Wonderland</span></label>
+                <label><input type="radio" name="item" value="assets/images/items/fruity.jpg" class="btn1" checked><span class="choice button2 ">熱帶綺夢-Tropical Fantasy</span></label>
+                <label><input type="radio" name="item" value="assets/images/items/fruity1.jpg" class="btn2"><span class="choice button2 ">香甜果園-Sweet Orchard</span></label><br>
+                <label><input type="radio" name="item" value="assets/images/items/fruity2.jpg" class="btn3"><span class="choice button2 ">果漾青春-Fruity Youth</span></label>
+                <label><input type="radio" name="item" value="assets/images/items/fruity3.jpg" class="btn4"><span class="choice button2 ">鮮果盛宴-Fresh Fruit Feast</span></label>
+                <label><input type="radio" name="item" value="assets/images/items/fruity4.jpg" class="btn5"><span class="choice button2 ">奇異果樂園-Kiwi Wonderland</span></label>
             </div>
             <div class="quantity"> 
                 <input type="button" value="‒" class="q-btn" onclick="minus(0)">
@@ -79,7 +79,7 @@
                 <input type="button" value="+" class="q-btn" onclick="add(0)">
             </div>
             <button class="button3">加入購物車</button>
-            <button class="button3"onclick="location.href='#'">立即結帳</button>
+            <button class="button3" onclick="location.href='checkout.html'">立即結帳</button>
         </div>
     </div>
 
@@ -144,24 +144,24 @@
             <hr color="#003870" width="400px"><br>
             <div class="review">
                 <div class="review-flex">
-                    <img src="icon/comment_user.png" style="width: 50px;">
-                    <p>aa*****79</p>
+                    <img src="assets/images/icon/comment_user.png" style="width: 50px;">
+                    <p>dh*****37</p>
                     <p>★★★★★</p>
                 </div>
                 <p>很舒服的味道!!</p>
             </div>
             <div class="review">
                 <div class="review-flex">
-                    <img src="icon/comment_user.png" style="width: 50px;">
-                    <p>li*****60</p>
+                    <img src="assets/images/icon/comment_user.png" style="width: 50px;">
+                    <p>xj*****60</p>
                     <p>★★★★☆</p>
                 </div>
-                <p>等待是值得的🥰</p>
+                <p>等待很值得</p>
             </div>
             <div class="review">
                 <div class="review-flex">
-                    <img src="icon/comment_user.png" style="width: 50px;">
-                    <p>na*****21</p>
+                    <img src="assets/images/icon/comment_user.png" style="width: 50px;">
+                    <p>fr*****55</p>
                     <p>★★★★★</p>
                 </div>
                 <p>Good quailty and fragrance!</p>
@@ -173,7 +173,7 @@
 <footer>
     <p>Copyright © 2024 Miss Flora All Rights Reserved</p>
 </footer>
-<!-- Login Modal -->
+<!-- 彈跳登入視窗 -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -187,7 +187,7 @@
     </div>
   </div>
   
-  <!-- Sign Up Modal -->
+  <!-- 彈跳註冊視窗 -->
   <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">

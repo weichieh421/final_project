@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miss Flora</title>
-    <link rel="stylesheet" href="css/itemspg.css">
+    <link rel="stylesheet" href="assets/css/itemspg.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="js/iteminfo.js"></script>
+    <script src="assets/js/itemspg.js"></script>
 </head>
 <body class="body1">
     <header>
         <div class="logo">
-            <img src="image/logo.png" alt="logo" style="border-radius: 50%; width: 100px">
+            <img src="assets/images/items/logo.png" alt="logo" style="border-radius: 50%; width: 100px">
         </div>
        
         <div class="nav1">
@@ -37,12 +37,12 @@
         </div>
         <div class="icons">
             <div class="navSearch">
-                <input type="search" placeholder="">
-                <img class="search1" src="icon/search.png" onclick="handleSearch()"><i class="fas fa-search"></i>
+                <input type="search">
+                <img class="search1" src="assets/images/icon/search.png" onclick="handleSearch()"><i class="fas fa-search"></i>
             </div>
             <div class="dropdown">
                 <a class="nav3 dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="icon/user.png" class="icon"> <!-- User Icon -->
+                    <img src="assets/images/icon/user.png" class="icon">
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="userDropdown">
                   <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">帳號登入</a></li>
@@ -50,43 +50,43 @@
                 </ul>
             </div>
             <a href="cart.html">
-                <img src="icon/cart.png" class="icon">
+                <img src="assets/images/icon/cart.png" class="icon">
             </a>
         </div>
     </header>
     <main>
         <section class="product-gallery">
             <div class="product_all">
-                <img src="image/neuter1.jpg">
-                <div class="overlay" onclick="location.href='floral.html'">
+                <img src="assets/images/items/neuter1.jpg">
+                <div class="overlay" onclick="location.href='neuter1.html'">
                     <p>中性調香氛</p>   
                 </div>
                 <div class="description" onclick="location.href='cart.html'">加入購物車</div>
             </div>
             <div class="product_all">
-                <img src="image/neuter4.jpg">
-                <div class="overlay" onclick="location.href='floral.html'">
+                <img src="assets/images/items/neuter4.jpg">
+                <div class="overlay" onclick="location.href='neuter4.html'">
                     <p>中性調香氛</p>
                 </div>
                 <div class="description" onclick="location.href='cart.html'">加入購物車</div>
             </div>
             <div class="product_all">
-                <img src="image/neuter7.jpg">
-                <div class="overlay" onclick="location.href='floral.html'">
+                <img src="assets/images/items/neuter7.jpg">
+                <div class="overlay" onclick="location.href='neuter7.html'">
                     <p>中性調香氛</p>  
                 </div>
                 <div class="description" onclick="location.href='cart.html'">加入購物車</div>
             </div>
             <div class="product_all">
-                <img src="image/neuter11.jpg">
-                <div class="overlay" onclick="location.href='floral.html'">
+                <img src="assets/images/items/neuter11.jpg">
+                <div class="overlay" onclick="location.href='neuter11.html'">
                     <p>中性調香氛</p>                   
                 </div>
                 <div class="description" onclick="location.href='cart.html'">加入購物車</div>
             </div>
             <div class="product_all">
-                <img src="image/neuter10.jpg">
-                <div class="overlay" onclick="location.href='floral.html'">
+                <img src="assets/images/items/neuter10.jpg">
+                <div class="overlay" onclick="location.href='neuter10.html'">
                     <p>中性調香氛</p>
                 </div>
                 <div class="description" onclick="location.href='cart.html'">加入購物車</div>
@@ -97,7 +97,7 @@
     <footer>
         <p>Copyright © 2024 Miss Flora All Rights Reserved</p>
     </footer>
-    <!-- Login Modal -->
+<!-- 彈跳登入視窗 -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -111,7 +111,7 @@
     </div>
   </div>
   
-  <!-- Sign Up Modal -->
+  <!-- 彈跳註冊視窗 -->
   <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">

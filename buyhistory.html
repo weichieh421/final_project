@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miss Flora</title>
-    <link rel="stylesheet" href="css/buyhistory.css">
+    <link rel="stylesheet" href="assets/css/buyhistory.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9Ap0zEOg7Hlq2THRZ" crossorigin="anonymous"></script> -->
 </head>
 <body class="body1">
     <header>
         <div class="logo">
-            <img src="image/logo.png" alt="logo" style="border-radius: 50%; width: 100px">
+            <img src="assets/images/items/logo.png" alt="logo" style="border-radius: 50%; width: 100px">
         </div>
-       
         <div class="nav1">
             <div class="nav2">
                 <a class="nav3" href="index.html">主頁</a>
@@ -35,12 +33,12 @@
         </div>
         <div class="icons">
             <div class="navSearch">
-                <input type="search" placeholder="">
-                <img class="search1" src="icon/search.png" onclick="handleSearch()"><i class="fas fa-search"></i>
+                <input type="search">
+                <img class="search1" src="assets/images/icon/search.png" onclick="handleSearch()"><i class="fas fa-search"></i>
             </div>
             <div class="dropdown">
                 <a class="nav3 dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="icon/user.png" class="icon"> <!-- User Icon -->
+                    <img src="assets/images/icon/user.png" class="icon">
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="userDropdown">
                   <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">帳號登入</a></li>
@@ -48,10 +46,11 @@
                 </ul>
             </div>
             <a href="cart.html">
-                <img src="icon/cart.png" class="icon">
+                <img src="assets/images/icon/cart.png" class="icon">
             </a>
         </div>
     </header>
+
     <div class="buttonb">
         <button class="buttona" onclick="location.href='member.html'">會員資料</button>
         <button class="buttona" onclick="location.href='buyhistory.html'">我的訂單</button>
@@ -64,7 +63,7 @@
             <p>日期：2024-03-24</p>
             <div class="order-items">
                 <div class="order-item">
-                    <img src="image/lamp.jpg" class="order-item-image">
+                    <img src="assets/images/items/lamp.jpg" class="order-item-image">
                     <div class="order-item-details">
                         <p>商品名稱：簡約石墨灰融燭燈</p>
                         <p>數量：1</p>
@@ -72,7 +71,7 @@
                     </div>
                 </div>
                 <div class="order-item">
-                    <img src="image/fruity2.jpg" class="order-item-image">
+                    <img src="assets/images/items/fruity2.jpg" class="order-item-image">
                     <div class="order-item-details">
                         <p>商品名稱：果香調香氛蠟燭/茉莉之吻-Jasmine Kiss</p>
                         <p>數量：2</p>
@@ -91,7 +90,7 @@
             <p>日期：2024-05-05</p>
             <div class="order-items">
                 <div class="order-item">
-                    <img src="image/stone2.jpg" class="order-item-image">
+                    <img src="assets/images/items/stone2.jpg" class="order-item-image">
                     <div class="order-item-details">
                         <p>商品名稱：擴香石/款式2-鈷藍</p>
                         <p>數量：2</p>
@@ -110,7 +109,7 @@
             <p>日期：2024-06-03</p>
             <div class="order-items">
                 <div class="order-item">
-                    <img src="image/frag.jpg" class="order-item-image">
+                    <img src="assets/images/items/frag.jpg" class="order-item-image">
                     <div class="order-item-details">
                         <p>商品名稱：蜜韻清香-蠟燭+室內擴香瓶</p>
                         <p>數量：1</p>
@@ -128,7 +127,7 @@
     <footer>
         <p>Copyright © 2024 Miss Flora All Rights Reserved</p>
     </footer>
-    <!-- Login Modal -->
+<!-- 彈跳登入視窗 -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -142,7 +141,7 @@
     </div>
   </div>
   
-  <!-- Sign Up Modal -->
+  <!-- 彈跳註冊視窗 -->
   <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">

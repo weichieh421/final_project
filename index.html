@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miss Flora</title>
-    <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body class="body1">
   <header>
     <div class="logo">
-        <img src="image/logo.png" alt="logo" style="border-radius: 50%; width: 100px">
+        <img src="assets/images/items/logo.png" alt="logo" style="border-radius: 50%; width: 100px">
     </div>
-   
     <div class="nav1">
         <div class="nav2">
             <a class="nav3" href="index.html">主頁</a>
@@ -36,12 +35,12 @@
     </div>
     <div class="icons">
         <div class="navSearch">
-            <input type="search" placeholder="">
-            <img class="search1" src="icon/search.png" onclick="handleSearch()"><i class="fas fa-search"></i>
+            <input type="search">
+            <img class="search1" src="assets/images/icon/search.png" onclick="handleSearch()"><i class="fas fa-search"></i>
         </div>
         <div class="dropdown">
             <a class="nav3 dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="icon/user.png" class="icon"> <!-- User Icon -->
+                <img src="assets/images/icon/user.png" class="icon">
             </a>
             <ul class="dropdown-menu" aria-labelledby="userDropdown">
               <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">帳號登入</a></li>
@@ -49,11 +48,10 @@
             </ul>
         </div>
         <a href="cart.html">
-            <img src="icon/cart.png" class="icon">
+            <img src="assets/images/icon/cart.png" class="icon">
         </a>
     </div>
 </header>
-
 
     <main>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -64,13 +62,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="image/slide1.png" class="d-block w-100" width="500px" height="700px" onclick="location.href='itemspg.html'">
+                <img src="assets/images/items/slide1.png" class="d-block w-100" width="500px" height="700px" onclick="location.href='itemspg.html'">
               </div>
               <div class="carousel-item">
-                <img src="image/slide2.png" class="d-block w-100" width="500px" height="700px" onclick="location.href='oil.html'">
+                <img src="assets/images/items/slide2.png" class="d-block w-100" width="500px" height="700px" onclick="location.href='oil.html'">
               </div>
               <div class="carousel-item">
-                <img src="image/slide3.png" class="d-block w-100" width="500px" height="700px" onclick="location.href='frag.html'">
+                <img src="assets/images/items/slide3.png" class="d-block w-100" width="500px" height="700px" onclick="location.href='frag.html'">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -87,19 +85,19 @@
             <h2 class="h2">本月熱銷</h2>
             <div class="product-grid">
               <div class="product">
-                <img src="image/leather.jpg" height="500"  onclick="location.href='leather.html'">
+                <img src="assets/images/items/leather.jpg" height="500"  onclick="location.href='leather.html'">
                 <div class="overlay"></div>
                 <p>古堡遺韻-Castle</p>
                 <button class="addtocart" onclick="location.href='leather.html'">加入購物車</button>
               </div>
               <div class="product">
-                <img src="image/aquatic.jpg" height="500" onclick="location.href='aquatic.html'">
+                <img src="assets/images/items/aquatic.jpg" height="500" onclick="location.href='aquatic.html'">
                 <div class="overlay"></div>
                 <p>海洋之詩-Ocean</p>
                 <button class="addtocart" onclick="location.href='aquatic.html'">加入購物車</button>
               </div>
               <div class="product">
-                <img src="image/floral.jpg" height="500" onclick="location.href='floral.html'">
+                <img src="assets/images/items/floral.jpg" height="500" onclick="location.href='floral.html'">
                 <div class="overlay"></div>
                 <p>牡丹盛宴-Peony</p>
                 <button class="addtocart" onclick="location.href='floral.html'">加入購物車</button>
@@ -122,14 +120,14 @@
           </div>
         </section>
         <button onclick="topFunction()" id="topBtn" title="返回頂部">
-          <img src="icon/backtotop.png" alt="返回頂部" style="width: 40px; height: 40px;">
+          <img src="assets/images/icon/backtotop.png" alt="返回頂部" style="width: 40px; height: 40px;">
       </button>
     </main>
 
     <footer>
         <p>Copyright © 2024 Miss Flora All Rights Reserved</p>
     </footer>
-<!-- Login Modal -->
+<!-- 彈跳登入視窗 -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -143,7 +141,7 @@
   </div>
 </div>
 
-<!-- Sign Up Modal -->
+<!-- 彈跳註冊視窗 -->
 <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
